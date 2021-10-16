@@ -11,16 +11,22 @@ const q = q => new Promise(resolve => {
     rl.question(q, a => resolve(a))
 })
 
-const bahasa_planet = (text, alias) => text.split``.map(v => {
-    (
-        (v == 'a') ? v.replace('a', `a${alias}a`) :
-        (v == 'i') ? v.replace('i', `i${alias}i`) :
-        (v == 'u') ? v.replace('u', `u${alias}u`) :
-        (v == 'e') ? v.replace('e', `e${alias}e`) :
-        (v == 'o') ? v.replace('o', `o${alias}o`) :
-        v
-    )
-).join``
+const bahasa_planet = (text, alias) => {
+    let result = ''
+    text.split``.map(v => {
+        result += (
+            (
+                (v == 'a') ? v.replace('a', `a${alias}a`) :
+                (v == 'i') ? v.replace('i', `i${alias}i`) :
+                (v == 'u') ? v.replace('u', `u${alias}u`) :
+                (v == 'e') ? v.replace('e', `e${alias}e`) :
+                (v == 'o') ? v.replace('o', `o${alias}o`) :
+                v
+            )
+        )
+    })
+    return result
+}
 
 ;(async() => {
     async function mulai() {
