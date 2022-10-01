@@ -135,7 +135,7 @@ function loginLoading(v){
         loginButton.innerHTML = loginButton.innerHTML.replace(Lang.queryJS('login.loggingIn'), Lang.queryJS('login.login'))
     }
 }
-
+ console.log("Ok");
 /**
  * Enable or disable login form.
  * 
