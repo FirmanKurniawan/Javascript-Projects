@@ -1,2 +1,3 @@
 var name = 'elisabet'
-console.log("nama saya adalah ")
+var asal = 'bumi'
+console.log(`Nama saya adalah ${name}`)
