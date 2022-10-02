@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400;700&display=swap');
+
+body{
+    font-family: 'Inconsolata', monospace;
+    background: rgb(37, 38, 44);
+    height: 90vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#question{
+    font-size:4rem;
+}
+#options{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 10px;
+}
+
+.option{
+    font-size: 2rem;
+    width: 90px;
+    height: 40px;
+    background: #4e4eff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 12px;
+    user-select: none;
+}
+
+.option:hover{
+    position: relative;
+    top: -5px;
+    filter: brightness(120%);
+}
