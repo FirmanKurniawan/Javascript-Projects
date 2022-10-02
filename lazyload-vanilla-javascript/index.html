@@ -1,0 +1,88 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Lazy Load</title>
+    <style>
+        img {
+            margin-top: 20px;
+        }
+
+        .img-before-load {
+            width: 100%;
+            height: 400px;
+            background: gray;
+        }
+
+        .img-after-load {
+            width: 500px !important;
+            height: 400px !important;
+            object-fit: contain;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <img data-src="./img/0.png" class="img-before-load" />
+    <img data-src="./img/1.png" class="img-before-load" />
+    <img data-src="./img/10.jpg" class="img-before-load" />
+    <img data-src="./img/11.jpeg" class="img-before-load" />
+    <img data-src="./img/12.png" class="img-before-load" />
+    <img data-src="./img/13.jpg" class="img-before-load" />
+    <img data-src="./img/14.jpg" class="img-before-load" />
+    <img data-src="./img/2.jpg" class="img-before-load" />
+    <img data-src="./img/3.png" class="img-before-load" />
+    <img data-src="./img/4.png" class="img-before-load" />
+    <img data-src="./img/5.png" class="img-before-load" />
+    <img data-src="./img/6.jpg" class="img-before-load" />
+    <img data-src="./img/7.png" class="img-before-load" />
+    <img data-src="./img/8.png" class="img-before-load" />
+    <img data-src="./img/9.jpg" class="img-before-load" />
+
+    <script>
+        window.addEventListener('load', () => {
+
+
+            const images = document.querySelectorAll('img')
+
+            const options = {
+                threshold: 0,
+                rootMargin: '0%',
+            }
+
+            const callback = (entries, observer) => {
+                const entry = entries[0]
+                const target = entries[0].target
+                
+                if(entry.isIntersecting) {
+                    const callback = () => {
+                        target.style.background = "none"
+
+                        target.removeEventListener('load', callback)
+                    }
+
+                    target.src = target.dataset.src
+                    target.classList.add('img-after-load')
+                    target.addEventListener('load', callback)
+
+                    observer.disconnect(target)
+                    observer.unobserve(target)
+                }
+
+            }
+
+            images.forEach(itm => {
+                const intersectionObserver = new IntersectionObserver(callback, options)
+                intersectionObserver.observe(itm)
+            })
+
+
+        })
+
+        // --- DONE ---
+    </script>
+</body>
+</html>
