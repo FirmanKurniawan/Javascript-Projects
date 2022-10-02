@@ -1,10 +1,9 @@
 # Simple Math Game
 ![Screenshot](screenshot.png)
 
-Simple Math Game is simple math game built with HTML, CSS, and Javascript
-Suitable for newbie who started to learn Javascript
-
-In this code, you will learn DOM Manipulation, array function, and so much more!
+<p align="center">Simple Math Game is simple math game built with HTML, CSS, and Javascript.</p>
+<p align="center">Suitable for newbie who started to learn Javascript. Learn about DOM Manipulation, array function, and so much more!</p>
+<hr>
 
 ## How It Works?
 - First, it will run generateQuestions() function to generate math question from random numbers in certain range and render the options. 
