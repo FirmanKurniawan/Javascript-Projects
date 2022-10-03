@@ -1,3 +1,3 @@
 var name = 'elisabet'
 var asal = 'bumi'
-console.log(`Nama saya adalah ${name}`)
+console.log(`Hii nama saya ${name} dan saya berasal dari ${asal}`)
