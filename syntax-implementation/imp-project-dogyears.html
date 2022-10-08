@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dog Years</title>
+  </head>
+  <body>
+    <script>
+      /* Dog Years|Human Years - Dea Ananda Gunawan
+A project that convert Dog years to Human years */
+
+      /* 
+
+Knowledge: Dua tahun pertama kehidupan seekor anjing dihitung masing-masing 10,5 tahun anjing. Setiap tahun berikutnya sama dengan 4 tahun anjing.
+
+8 tahun umur manusia = 
+1st year = 10.5
+2nd = 10.5
+3-8 = 4*6 = 24
+Total = 45 tahun umur anjing
+
+*/
+
+      // My Age
+      let myAge = 20;
+
+      // variables to save that the important year of dog's year is the first 2 years.
+      let earlyYears = 2;
+      // reassign earlyYears and get it multiplied by 10.5(1 year)
+      earlyYears = 2 * 10.5;
+
+      // Substract 2 from myAge to see how many years left
+      laterYears = myAge -= 2;
+
+      // multiply the years left by 4 to calculate the number of dog years
+      laterYears *= 4;
+
+      console.log(`Early years: ${earlyYears} and Later years: ${laterYears}`);
+
+      // Adding earlyYears and laterYears of dog years
+      let myAgeInDogYears = earlyYears + laterYears;
+
+      // Using a string method text
+      let myName = "Dea Ananda Gunawan".toLowerCase();
+
+      // Final result
+      console.log(`My name is ${myName}. I am ${myAge} years old in human years, which is ${myAgeInDogYears} years old in dog years`);
+    </script>
+  </body>
+</html>
