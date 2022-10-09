@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blackjack Game</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+  </head>
+  <body>
+    <header class="title">Blackjack Game v0.8</header>
+    <div class="row mt-2">
+      <div class="col text-center">
+        <button id="btnNew" class="btn btn-danger m-1">New Game</button>
+        <button id="btnDraw" disabled class="btn btn-primary m-1">
+          Drawcard
+        </button>
+        <button id="btnEnd" disabled class="btn btn-primary m-1">
+          End turn
+        </button>
+      </div>
+    </div>
+    <div class="row container">
+      <div class="col">
+        <h1>Player 1 - <small>0</small></h1>
+        <div class="divCards">
+          <!-- <img class="card" src="./assets/cards/2D.png" alt="" srcset="" /> -->
+        </div>
+      </div>
+    </div>
+    <div class="row container mt-4">
+      <div class="col">
+        <h1>Computer - <small>0</small></h1>
+        <div class="divCards">
+          <!-- <img class="card" src="./assets/cards/6C.png" alt="" srcset="" /> -->
+        </div>
+      </div>
+    </div>
+    <script src="./assets/js/underscore-min.js"></script>
+    <script src="./assets/js/game.js"></script>
+  </body>
+</html>
