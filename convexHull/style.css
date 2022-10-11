@@ -1,11 +1,25 @@
 #map {
 	height: 94vh;
+	width: 88vw;
 }
 
 #btn-container {
-	width: 98vw;
+	width: 88vw;
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	gap: 2vw;
 	margin-bottom: 1vh;
+}
+
+#instructions {
+	width: 10vw;
+	float: right;
+	border: 1px solid black;
+	padding: 10px;
+	text-align: center;
+}
+
+#instructions-title {
+	text-decoration: underline;
 }

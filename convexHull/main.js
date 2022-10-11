@@ -31,5 +31,6 @@ convexBtn.addEventListener("click", () => {
 	if (hull) {
 		const convexHull = L.polygon(hull.geometry.coordinates)
 		convexHull.addTo(map)
+		resetBtn.disabled = false
 	}
 })
