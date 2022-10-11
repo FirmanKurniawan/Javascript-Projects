@@ -1,0 +1,49 @@
+[{
+    "points": [ 31.802893, 112.817956, -28.4792625, 24.6727135],
+    "total": "$3.18B",
+    "to": "China",
+    "curvature": 0.5,
+    "label": {
+        "position": "0%",
+        "anchor": "bottom"
+    }
+}, {
+    "points": [ 50.5010789, 4.4764595, -28.4792625, 24.6727135],
+    "total": "$431M",
+    "to": "Belgium",
+    "curvature": 0.20,
+    "label": {
+        "position": "0%",
+        "anchor": "bottom"
+    }
+}, {
+    "points": [ 25.276987, 55.296249, -28.4792625, 24.6727135],
+    "total": "$421M",
+    "to": "United Arab Emirates",
+    "curvature": 0.85,
+    "label": {
+        "position": "0%",
+        "anchor": "bottom",
+        "offsetX": -40
+    }
+}, {
+    "points": [ -22.342841, 24.6871044, -28.4792625, 24.6727135],
+    "total": "$334M",
+    "to": "Botswanna",
+    "curvature": 0.6,
+    "label": {
+        "position": "20%",
+        "anchor": "bottom"
+    }
+}, {
+    "points": [ 31.4117257, 35.0818155, -28.4792625, 24.6727135],
+    "total": "$95.3M",
+    "to": "Isreal",
+    "curvature": 0.40,
+    "label": {
+        "position": "0%",
+        "anchor": "topLeft",
+        "offsetX": 5,
+        "offsetY": 10
+    }
+}]
