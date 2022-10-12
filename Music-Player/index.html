@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&family=Redressed&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/2fd2b74342.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/style.css">
+    <title>Music Player</title>
+</head>
+
+<body>
+    <div class="landing__page">
+        <nav aria-label="navigation" class="navbar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li>
+                    <a href="#">
+                        Genres
+                        <ul>
+                            <li><a href="#">Rock</a></li>
+                            <li><a href="#">EDM</a></li>
+                            <li><a href="#">Hip-Hop & Rap</a></li>
+                            <li><a href="#">Pop</a></li>
+                            <li><a href="#">Others</a></li>
+                        </ul>
+                    </a>
+                </li>
+            </ul>
+            <div class="logo">
+                <img src="/assets/sangeetic.png" alt="Sangeetic" />
+            </div>
+            <ul>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="music__player__container">
+        <div class="music_container">
+            <div class="music_info">
+                <h4 id="title">Цунами</h4>
+                <p id="singer">Escape</p>
+                <div class="progress_container">
+                    <div class="progress"></div>
+                </div>
+                <div class="duration_info">
+                    <span id="current_time"></span>
+                    <span id="duration"></span>
+                </div>
+            </div>
+            <audio src="/music/Tsunami.mp3" id="audio"></audio>
+
+            <div class="img_container">
+                <img src="/images/Tsunami.jpg" alt="Music-Cover" id="cover" />
+            </div>
+
+            <div class="navigation">
+                <button id="prev" class="action_btn">
+                    <i class="fa-solid fa-angle-left"></i>
+                </button>
+
+                <button id="play" class="action_btn action_btn_big">
+                    <i class="fa-solid fa-play"></i>
+                </button>
+
+                <button id="next" class="action_btn">
+                    <i class="fa-solid fa-angle-right"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+    <script src="/script.js"></script>
+</body>
+
+</html>
