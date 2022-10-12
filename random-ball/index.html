@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script.js"></script>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;            
+        }
+        canvas{
+            background: #eee;
+            display: block;
+            margin: 100px auto;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="my_canvas" width="640" height="480"></canvas>
+    <script>
+        let start = (id)=>{
+            let game = new Game(id,20)
+            let go = () => {
+                game.draw()
+                window.requestAnimationFrame(go)
+            }
+            window.requestAnimationFrame(go)
+        }
+        start("my_canvas")
+
+    </script>
+</body>
+</html>
