@@ -105,6 +105,13 @@ body {
     z-index: 1;
 }
 
+.navigation img {
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    margin: 0 10px;
+}
+
 .action_btn {
     background: #FFFFFF;
     border: none;
