@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>DrumKit</title>
+  </head>
+  <body>
+    <div class="container">
+        <div class="content">
+            <div class="logo">
+                <h1>drum</h1>
+                <img src="./images/drum.png" alt="">
+                <h1>kit</h1>
+            </div>
+
+            <div class="drum-kit-keys">
+                <div class="keys">
+                    <div data-key="65" class="key">
+                        <h2>A</h2>
+                    </div>
+                    <p>Clap</p>
+                </div>
+                <div class="keys">
+                    <div data-key="83" class="key">
+                        <h2>S</h2>
+                    </div>
+                    <p>Hihat</p>
+                </div>
+                <div class="keys">
+                    <div data-key="68" class="key">
+                        <h2>D</h2>
+                    </div>
+                    <p>Kick</p>
+                </div>
+                <div class="keys">
+                    <div data-key="70" class="key">
+                        <h2>F</h2>
+                    </div>
+                    <p>Openhat</p>
+                </div>
+                <div class="keys">
+                    <div data-key="71" class="key">
+                        <h2>G</h2>
+                    </div>
+                    <p>Boom</p>
+                </div>
+                <div class="keys">
+                    <div data-key="72" class="key">
+                        <h2>H</h2>
+                    </div>
+                    <p>Ride</p>
+                </div>
+                <div class="keys">
+                    <div data-key="74" class="key">
+                        <h2>J</h2>
+                    </div>
+                    <p>Snare</p>
+                </div>
+                <div class="keys">
+                    <div data-key="75" class="key">
+                        <h2>K</h2>
+                    </div>
+                    <p>Tom</p>
+                </div>
+                <div class="keys">
+                    <div data-key="76" class="key">
+                        <h2>L</h2>
+                    </div>
+                    <p>Tink</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <audio data-key="65" src="./audio/01 - JavaScript Drum Kit_sounds_clap.wav"></audio>
+    <audio data-key="83" src="./audio/01 - JavaScript Drum Kit_sounds_hihat.wav"></audio>
+    <audio data-key="68" src="./audio/01 - JavaScript Drum Kit_sounds_kick.wav"></audio>
+    <audio data-key="70" src="./audio/01 - JavaScript Drum Kit_sounds_openhat.wav"></audio>
+    <audio data-key="71" src="./audio/01 - JavaScript Drum Kit_sounds_boom.wav"></audio>
+    <audio data-key="72" src="./audio/01 - JavaScript Drum Kit_sounds_ride.wav"></audio>
+    <audio data-key="74" src="./audio/01 - JavaScript Drum Kit_sounds_snare.wav"></audio>
+    <audio data-key="75" src="./audio/01 - JavaScript Drum Kit_sounds_tom.wav"></audio>
+    <audio data-key="76" src="./audio/01 - JavaScript Drum Kit_sounds_tink.wav"></audio>
+
+    <script src="./javaScript/app.js"></script>
+  </body>
+</html>
