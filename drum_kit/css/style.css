@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Fredoka One", cursive;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  background-color: #ebffff;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+.content {
+  width: 100%;
+  height: 100vh;
+  max-width: 1140px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  gap: 0.4rem;
+  filter: drop-shadow(0px 10px 20px rgba(0, 0, 0, 0.14));
+}
+
+.logo img {
+  width: 104px;
+  height: 104px;
+}
+
+.logo h1 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 70px;
+  line-height: 116px;
+  color: #f27182;
+  text-transform: uppercase;
+  text-shadow: 2px 0 0 #ed5469, -2px 0 0 #ed5469, 0 2px 0 #ed5469,
+    0 -2px 0 #ed5469, 2px 2px #ed5469, -2px -2px #ed5469, 2px -2px #ed5469,
+    -2px 2px #ed5469;
+}
+
+.drum-kit-keys{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.keys{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem 2rem;
+}
+
+
+.keys p{
+    font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 24px;
+color: #B7B7B7;
+margin-top: 0.2rem;
+}
+
+.key{
+    width: 120px;
+    height: 120px;
+    background: #FFFFFF;
+border: 4px solid rgba(189, 249, 249, 0.62);
+box-sizing: border-box;
+box-shadow: 0px 20px 20px 10px rgba(210, 255, 255, 0.5);
+border-radius: 20px;
+display: flex;
+align-items: center;
+justify-content: center;
+transition: all 0.07s;
+}
+
+.playing{
+    transform: scale(1.1);
+    box-shadow: 0px 20px 20px 10px rgba(0, 0, 0, 0.123);
+}
+
+.key h2{
+    font-style: normal;
+font-weight: 400;
+font-size: 50px;
+line-height: 116px;
+color: #CBE2FF;
+text-shadow: 2px 0 0 #80B4FB, -2px 0 0 #80B4FB, 0 2px 0 #80B4FB,
+    0 -2px 0 #80B4FB, 2px 2px #80B4FB, -2px -2px #80B4FB, 2px -2px #80B4FB,
+    -2px 2px #80B4FB;
+
+}
+
