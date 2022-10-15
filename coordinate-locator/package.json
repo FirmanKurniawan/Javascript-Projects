@@ -1,0 +1,21 @@
+{
+  "dependencies": {
+    "body-parser": "^1.20.0",
+    "env": "^0.0.2",
+    "express": "^4.18.1",
+    "local-reverse-geocoder": "^0.12.1",
+    "nedb": "^1.8.0",
+    "node-geocoder": "^4.2.0",
+    "request": "^2.88.2",
+    "reverse-geocoding": "^3.0.2"
+  },
+  "name": "location-tracer",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "author": "Jils",
+  "license": "ISC",
+  "description": ""
+}
