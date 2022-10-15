@@ -1,0 +1,23 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: radial-gradient(rgb(14, 14, 14), rgb(165, 159, 159));
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+h1 {
+    color: white;
+    padding: 1rem;
+}
+
+#geo {
+    margin: 2rem;
+}
+
+#map {
+    height: 300px;
+    width: 500px 
+}
