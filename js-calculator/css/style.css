@@ -1,0 +1,125 @@
+body {
+	font-family: arial;
+}
+
+html, body {
+	height: 100%;
+}
+
+.window {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.container {
+	width: 400px;
+	border: 3px solid black;
+	border-radius: 30px;
+	box-sizing: border-box;
+	padding: 13px;
+	background-color: rgb(197, 197, 197);
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 150px max-content;
+}
+
+/* layar */
+.layar {
+	border-radius: 12px;
+	box-sizing: border-box;
+	margin-bottom: 13px;
+	background-color: rgb(194, 194, 194);
+	box-shadow: inset 7px 7px 10px rgba(0, 0, 0, 0.7), inset -7px -7px 10px white;
+	padding: 15px;
+	overflow: hidden;
+	display: flex;
+	flex-wrap: wrap;
+	align-content: flex-end;
+}
+
+.layar .atas, .layar .bawah {
+	width: 1000%;
+	height: 45px;
+	box-sizing: border-box;
+	overflow: hidden;
+	font-size: 33px;
+}
+
+.layar .bawah, .layar .atas {
+	display: flex;
+	justify-content: flex-end;
+}
+
+.rata {
+	display: flex;
+	align-items: flex-end;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.rata p {
+	display: inline;
+}
+/* layar */
+
+/* angka */
+.angka {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: repeat(5, max-content);
+	justify-items: center;
+	align-items: center;
+	grid-template-areas: 'satu satu satu satu'
+						 'satu satu satu satu'
+						 'satu satu satu satu'
+						 'satu satu satu satu'
+						 'dua dua tiga empat';
+	row-gap: 15px;
+}
+
+.samadengan {
+	grid-area: empat;
+}
+
+.titik {
+	grid-area: tiga;
+}
+
+div.nol {
+	width: 85%;
+	grid-area: dua;
+}
+
+.tombol {
+	font-size: 25px;
+	box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.7), -7px -7px 10px rgba(255, 255, 255, 0.9);
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 65px;
+	height: 65px;
+	border-radius: 15px;
+}
+
+.tombol:active {
+	box-shadow: 7px 7px 8px rgba(0, 0, 0, 0.4), -7px -7px 8px rgba(255, 255, 255, 0.6);
+}
+
+.tombol:nth-child(4n) {
+	margin-right: 0;
+}
+
+.tombol:nth-child(16), .tombol:nth-child(17), .tombol:nth-child(18), .tombol:nth-child(19), .tombol:nth-child(20) {
+	margin-bottom: 0;
+}
+
+.hapus img {
+	width: 60%;
+}
+/* angka */
