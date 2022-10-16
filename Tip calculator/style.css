@@ -1,0 +1,96 @@
+/*styles.css*/
+
+body {
+    background: rgb(214, 121, 121) url(https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.dreamstime.com%2Fgreek-food-background-traditional-different-dishes-top-view-close-up-image153149838&psig=AOvVaw2nv1U9q4oSbbodUzcFn_QI&ust=1665983279046000&source=images&cd=vfe&ved=0CA0QjRxqFwoTCMi7mcL94_oCFQAAAAAdAAAAABAD) center center no-repeat;
+    background-size: cover;
+    color:#532827;
+}
+
+#container{
+    width: 400px;
+    margin: 40px auto 0;
+    padding: 50px;
+    box-sizing: border-box;
+    background: url(https://www.google.com/imgres?imgurl=https%3A%2F%2Fpreviews.123rf.com%2Fimages%2Fsaelim%2Fsaelim1803%2Fsaelim180300011%2F96896664-abstract-background-of-old-paper-texture-white-and-brown-crumpled-paper-pattern-background-can-be-us.jpg&imgrefurl=https%3A%2F%2Fwww.123rf.com%2Fphoto_96896664_abstract-background-of-old-paper-texturewhite-and-brown-crumpled-paper-pattern-background-can-be-use.html&tbnid=1MphY7XPJ60myM&vet=12ahUKEwj2iu-A_eP6AhWviNgFHYOOA7kQMygHegUIARDpAQ..i&docid=lacCgcJG-CCsQM&w=1300&h=866&q=paper%20pattern%20images&ved=2ahUKEwj2iu-A_eP6AhWviNgFHYOOA7kQMygHegUIARDpAQ)top left repeat;
+    box-shadow: 0 10px 15px -8px #000;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+h1{
+    margin: 0 0 20px;
+    padding: 0 0 20px;
+    border-bottom: solid 1px #ddd;
+    
+}
+
+form{
+    text-align: left;
+}
+
+form label{
+    display: block;
+    margin:25px 0;
+    font-weight: bold;
+}
+
+form input,
+form select{
+    padding: 8px;
+    margin: 10px 0;
+}
+
+form input[type="text"]{
+    width: 90px;
+}
+
+button{
+    background: #6c2726;
+    color: white;
+    border-bottom:solid 4px #222;
+    text-transform: uppercase;
+    font-size: 18px;
+    padding: 20px 30px;
+    width: 100%;
+}
+
+bottom:hover{
+    background:#4c2827;
+    border-bottom-color: #111;
+}
+
+button:active{
+
+    position: relative;
+    top: 3px;
+}
+
+#totalTip{
+
+    font-size: 50px;
+    margin-top: 40px;
+}
+
+#totalTip:before{
+
+    content: "Tip amount";
+    font-size: 14px;
+    font-weight: bold;
+    display: block;
+    text-transform: uppercase;
+}
+
+#totalTip sup{
+
+   font-size: 24px;
+   top: -18px;
+}
+
+#totalTip small{
+
+    font-size: 14px;
+    font-weight: bold;
+    display: block;
+}
