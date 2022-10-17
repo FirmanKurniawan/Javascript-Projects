@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=width-device, initial-scale=1.0" />
+    <title>Konversi Suhu</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="wrap">
+        <div class="card">
+          <!-- Block Celcius -->
+          <div class="card-header">
+            <h4>Celcius >> Reamur</h4>
+          </div>
+          <div class="card-body">
+            Masukkan Suhu (Celcius)
+            <input type="number" id="input" class="form-control" />
+            <button
+              type="button"
+              class="btn btn-success btn-block"
+              onclick="celciusreamur()"
+            >
+              Convert
+            </button>
+            Result
+            <input type="text" id="hasil" class="form-control" readonly />
+          </div>
+        </div>
+      </div>
+      <div class="wrap">
+        <div class="card">
+          <!-- Block Reamur -->
+          <div class="card-header">
+            <h4>Reamur >> Celcius</h4>
+          </div>
+          <div class="card-body">
+            Masukkan Suhu (Reamur)
+            <input type="number" id="input1" class="form-control" />
+            <button
+              type="button"
+              class="btn btn-success btn-block"
+              onclick="reamurcelcius()"
+            >
+              Convert
+            </button>
+            Result
+            <input type="text" id="hasil1" class="form-control" readonly />
+          </div>
+        </div>
+      </div>
+      <div class="wrap">
+        <div class="card">
+          <!-- Block Fahrenheit -->
+          <div class="card-header">
+            <h4>Fahrenheit >> Celcius</h4>
+          </div>
+          <div class="card-body">
+            Masukkan Suhu (Fahrenheit)
+            <input type="number" id="input2" class="form-control" />
+            <button
+              type="button"
+              class="btn btn-success btn-block"
+              onclick="fahrenheitcelcius()"
+            >
+              Convert
+            </button>
+            Result
+            <input type="text" id="hasil2" class="form-control" readonly />
+          </div>
+        </div>
+      </div>
+
+      <div class="wrap">
+        <div class="card">
+          <!-- Block Kelvin -->
+          <div class="card-header">
+            <h4>Kelvin >> Fahrenheit</h4>
+          </div>
+          <div class="card-body">
+            Masukkan Suhu (Kelvin)
+            <input type="number" id="input3" class="form-control" />
+            <button
+              type="button"
+              class="btn btn-success btn-block"
+              onclick="kelvinfahrenheit()"
+            >
+              Convert
+            </button>
+            Result
+            <input type="text" id="hasil3" class="form-control" readonly />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
