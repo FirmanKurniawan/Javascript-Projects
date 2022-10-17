@@ -1,0 +1,18 @@
+$theme-colors: (
+  "primary": #242f9b,
+  "secondary": #646fd4,
+  "light": #dbdffd,
+  "info": #9ba3eb,
+  "danger": #dc3545,
+  "success": #bddb9d,
+  "warning": #fd7e14,
+);
+
+$body-bg: #dbdffd;
+$body-color: #343a40;
+
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+
+body {
+  font-family: "Poppins", sans-serif;
+}
