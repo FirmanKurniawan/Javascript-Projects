@@ -165,3 +165,117 @@ let hapusKarakter = (obj) => {
         operasi[operasi.length - 1] = angkaInt;
     }
 }
+
+
+// function untuk menghapus semua karakter pada layar
+let hapusSemua = (obj) => {
+    obj.innerHTML = '';
+    operasi = [];
+    desimal = false;
+}
+
+// function untuk perhitungan
+let perhitungan = () => {
+    let penentu = true;
+    while(penentu) {
+        // cek apakah array kosong
+        if(operasi.length == 0) {
+            break;
+        }
+
+        // jika element terakhir adalah operator
+        if(typeof(operasi[operasi.length - 1]) == 'string') {
+            operasi.pop();
+        }
+        
+        // cek apakah ada operator dalam array operasi
+        let patokan = false;
+        for(let i = 0; i < operasi.length; i++) {
+            if(typeof(operasi[i]) == 'string') {
+                patokan = true;
+                break;
+            }
+        }
+        if(!patokan) {
+            return operasi[0];
+        }
+    
+        // jika ada operator dalam array operasi
+        if(patokan) {
+            let i = 0;
+            let ulang = 1;
+            while(true) { 
+                if(ulang == 1 && (operasi[i] == 'x' || operasi[i] == '/')) { 
+                    let angkaSebelum = operasi[i - 1];
+                    let angkaSesudah = operasi[i + 1];
+                    let hasil;
+                    if(operasi[i] == 'x') {
+                        hasil = angkaSebelum * angkaSesudah;
+                    } else {
+                        hasil = angkaSebelum / angkaSesudah;
+                    }
+                    operasi.splice(i - 1, 3, hasil);
+                    break;
+                }
+                if(ulang == 2 && (operasi[i] == '+' || operasi[i] == '-')) { 
+                    let angkaSebelum = operasi[i - 1];
+                    let angkaSesudah = operasi[i + 1];
+                    let hasil;
+                    if(operasi[i] == '+') {
+                        hasil = angkaSebelum + angkaSesudah;
+                    } else {
+                        hasil = angkaSebelum - angkaSesudah;
+                    }
+                    operasi.splice(i - 1, 3, hasil);
+                    break;
+                }
+                if(i == operasi.length - 1) {
+                    ulang++;
+                    i = 0;
+                }
+                i++;
+            }
+        }
+    }
+}
+
+// menampilkan angka dan menjalankan beberapa fungsi
+buttons.forEach((el) => {
+    el.addEventListener('click', (element) => {
+        let kelas = el.classList.item(1);
+        if(kelas == 'clear' || kelas == 'hapus' || kelas == 'samadengan' || kelas == 'perluas') {
+            if(kelas == 'hapus') {
+                hapusKarakter(text);
+                console.log(operasi); // tes
+            }
+            if(kelas == 'clear') {
+                hapusSemua(text);
+                hapusSemua(text2);
+            }
+            if(kelas == 'samadengan' && operasi.length != 0) {
+                text2.innerHTML = text.innerHTML;
+                text.innerHTML = '= ' + perhitungan();
+                operasi = [];
+            }
+            return;
+        }
+        if(kelas == 'titik' && operasi.length == 0) {
+            return;
+        }
+        let penentu = kelas == 'percent' || kelas == 'bagi' || kelas == 'kali' || kelas == 'kurang' || kelas == 'tambah';
+        if(penentu) {
+            if(operasi.length == 0) {
+                return;
+            }
+            if(typeof(operasi[operasi.length - 1]) == 'string') {
+                return;
+            }
+        }
+        if(operasi.length == 0) {
+            text.innerHTML = '';
+        }
+        let teks = document.createTextNode(el.innerHTML);
+        text.appendChild(teks);
+        tambahElement(el.innerHTML);
+    });
+});
