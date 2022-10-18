@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Latihan DOM-1</title>
+  </head>
+  <style>
+    html,
+    body {
+      height: 100%;
+      text-align: center;
+    }
+    .gradient {
+      background-image: linear-gradient(to left, #acb6e5, #f7d6e0, #86fde8);
+    }
+    .box {
+      width: 25px;
+      height: 25px;
+      margin: 10px auto;
+    }
+    .red {
+      background-color: red;
+    }
+    .green {
+      background-color: green;
+    }
+    .blue {
+      background-color: blue;
+    }
+  </style>
+  <body>
+    <h1>Playing with Colors!</h1>
+    <section id="A">
+      <button type="button" id="tChangeColor">Gradient Bg-Color</button>
+      <br /><br />
+      <!-- red -->
+      <div class="box red"></div>
+      <input type="range" name="redSlider" min="0" max="255" />
+
+      <!-- green -->
+      <div class="box green"></div>
+      <input type="range" name="greenSlider" min="0" max="255" />
+
+      <!-- blue -->
+      <div class="box blue"></div>
+      <input type="range" name="blueSlider" min="0" max="255" />
+    </section>
+
+    <script>
+      //   Tangkap button
+      const tChangeColor = document.getElementById("tChangeColor");
+
+      // Tangkap elemen yang dituju
+      const body = document.querySelector("body");
+
+      //   Dengarkan event
+      tChangeColor.addEventListener("click", function () {
+        // body.style.backgroundColor = "salmon";
+        // body.setAttribute('class', 'gradient');
+        body.classList.toggle("gradient");
+      });
+
+      //   Manipulasi node: membuat button baru
+      const tRandomColor = document.createElement("button"); //create element
+      const textButton = document.createTextNode("Random Bg-Color"); //create text
+      tRandomColor.appendChild(textButton); //memasukkan teks ke dalam button
+      tRandomColor.setAttribute("type", "button"); //set atribut pada button
+      tChangeColor.after(tRandomColor); //meletakkan button di posisi setelah button changeColor
+
+      tRandomColor.addEventListener("click", function () {
+        const r = Math.floor(Math.random() * 256);
+        const g = Math.floor(Math.random() * 256);
+        const b = Math.floor(Math.random() * 256);
+        // console.log(`${r},${g},${b}`);
+        body.style.backgroundColor = `rgb(${r},${g},${b})`;
+      });
+
+      //   Red-Slide
+      const redSlider = document.querySelector("input[name= redSlider]");
+      const greenSlider = document.querySelector("input[name= greenSlider]");
+      const blueSlider = document.querySelector("input[name= blueSlider]");
+
+      redSlider.addEventListener("input", function () {
+        const r = redSlider.value;
+        const g = greenSlider.value;
+        const b = blueSlider.value;
+        // menangkap nilai dari slider (0-255)
+        document.body.style.backgroundColor = `rgb(${r},${g},${b})`;
+        document.body.style.backgroundColor = `rgb(${r},${g},${b})`;
+      });
+
+      greenSlider.addEventListener("input", function () {
+        const r = redSlider.value;
+        const g = greenSlider.value;
+        const b = blueSlider.value;
+        // menangkap nilai dari slider (0-255)
+        document.body.style.backgroundColor = `rgb(${r},${g},${b})`;
+      });
+
+      blueSlider.addEventListener("input", function () {
+        const r = redSlider.value;
+        const g = greenSlider.value;
+        const b = blueSlider.value;
+        // menangkap nilai dari slider (0-255)
+        document.body.style.backgroundColor = `rgb(${r},${g},${b})`;
+      });
+
+      //   Move mouse and change the color!
+      document.body.addEventListener("mousemove", function (event) {
+        // posisi mouse
+        // ukuran browser
+        // console.log(event.clientX);
+        // console.log(window.innerWidth);
+        const xPos = Math.floor((event.clientX / window.innerWidth) * 256); //red value
+        const yPos = Math.floor((event.clientY / window.innerHeight) * 256); //green value
+        let zPos = Math.floor(Math.random() * 256);
+        console.log(zPos);
+        document.body.style.backgroundColor = `rgb(${xPos},${yPos},100)`;
+      });
+    </script>
+  </body>
+</html>
