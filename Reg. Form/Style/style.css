@@ -1,0 +1,175 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+}
+
+body {
+  background: url("../Assets/black.jpg") no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-blend-mode: darken;
+}
+
+/* utilities  */
+
+.container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 30px 0;
+  overflow: hidden;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+textarea {
+  resize: none;
+  margin-bottom: 0;
+}
+.row > * {
+  padding-right: 0;
+}
+.row > :first-child {
+  margin-top: 1rem;
+}
+.gx-6 {
+  --bs-gutter-x: 5rem;
+}
+.form-area.px-4 {
+  padding-left: 2rem !important;
+  padding-right: 2rem !important;
+}
+.form-area.py-5 {
+  padding-top: 2.5rem !important;
+  padding-bottom: 2.5rem !important;
+}
+.intro-para.pt-5 {
+  padding-top: 0 !important;
+}
+
+/* ================================================================== */
+
+.form-area input,
+.form-area textarea {
+  background: #fbfbfb;
+  font-size: 14px;
+}
+.head-label {
+  background: rgb(231, 0, 0);
+  background: linear-gradient(
+    0deg,
+    rgb(216, 0, 0) 26%,
+    rgba(255, 0, 0, 1) 100%
+  );
+  border-radius: 96px 0 0 96px;
+  margin: auto;
+  color: #fff;
+  margin-right: -3rem;
+}
+.pattern {
+  height: 15rem;
+}
+.pattern img {
+  height: 15rem;
+}
+.head-label h4 {
+  text-align: center;
+}
+.head-label .py-4 {
+  padding-top: 1.2rem !important;
+  padding-bottom: 1.2rem !important;
+}
+.main-label {
+  background: rgb(7, 7, 7);
+  border-radius: 0 14rem 0 0;
+  margin-left: -3rem;
+  color: #fff;
+  overflow: hidden;
+}
+
+.form-area {
+  position: relative;
+  background-color: rgb(255, 255, 255);
+  color: rgb(14, 14, 14);
+  width: 80%;
+  height: 100%;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.form-area a {
+  text-decoration: none;
+}
+.form-area a img {
+  width: 180px;
+}
+
+.form-area .border {
+  width: 5rem;
+  color: #fff;
+}
+.form-area button {
+  width: 100px;
+}
+
+.form-area .caution-msg {
+  font-size: 14px;
+}
+.intro-para {
+  text-align: center;
+}
+#checkAlert{
+  display: none;
+}
+
+/* checkbox */
+
+input.check-input{
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
+}
+
+/* media queries */
+
+@media (max-width: 756px) {
+  .form-area {
+    width: 90%;
+  }
+  .container {
+    width: auto;
+    height: 100%;
+  }
+  .form-area.px-4 {
+    padding-right: 1rem !important;
+    padding-left: 1rem !important;
+  }
+  .form-area.py-5 {
+    padding-top: 1.5rem !important;
+    padding-bottom: 1.5rem !important;
+  }
+  .intro-para {
+    text-align: center;
+  }
+  .head-label h4 {
+    font-size: 1rem;
+    text-align: start;
+    padding-left: 3rem !important;
+  }
+  .intro-para.pt-5 {
+    padding-top: 1.8rem !important;
+  }
+  .intro-para {
+    font-size: 80%;
+    text-align: justify;
+  }
+  .form-area a img {
+    width: 140px;
+  }
+}
