@@ -1,0 +1,27 @@
+{
+    "manifest_version": 2,
+    "minimum_chrome_version": "22",
+
+    "author": "Steven Roberts",
+    "homepage_url": "https://github.com/Steven-Roberts/Word-Counter-Plus",
+    "name": "Word Counter Plus",
+    "description": "Provides a right click context menu to get stats on the selected text",
+    "version": "2.0.0",
+
+    "icons": {
+        "16": "icon-16.png",
+        "48": "icon-19.png",
+        "128": "icon-128.png"
+    },
+
+    "offline_enabled": true,
+
+    "permissions": [
+        "contextMenus"
+    ],
+
+    "background": {
+        "persistent": false,
+        "scripts": ["background.js"]
+    }
+}
