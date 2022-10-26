@@ -1,0 +1,75 @@
+console.log("Assalamualaikum");
+var name = "Heical Chandra Syahputra";
+var umur = 18;
+console.log("Nama saya adalah " + name);
+console.log("Umur saya sekarang adalah " + umur);
+console.log(`namun 10 tahun lagi saya berumur : ${umur + 10} `);
+//bisa juga + (umur + 10)
+
+// Deklarasikan constant language
+const language = "Jepang";
+
+// Gunakan constant language untuk mencetak "Saya bisa berbicara bahasa ____"
+console.log("Saya bisa berbicara bahasa " + language);
+
+// Cetak string "Nama saya adalah ____"
+console.log(` Nama saya adalah ${name}`);
+
+// Cetak string "Hari ini saya berusia ____ tahun"
+console.log(`Hari ini saya berusia ${umur} tahun`);
+
+let nilai = 70;
+console.log(`Nilai saya ${nilai}`);
+if (nilai > 75) {
+  console.log("Anda Lulus");
+} else {
+  console.log("Anda Tidak Lulus");
+}
+//boolean
+const nilai2 = 80;
+console.log(nilai2 >= 80);
+//if else tapi pake boolean
+if (true) {
+  console.log("Nilai anda lebih dari 80");
+}
+//deklarasi var banyak
+var ayam = "ayam tiren",
+  bebek = "bebek lepas",
+  pisang = "pisang gencet";
+console.log(ayam + " " + bebek + " " + pisang);
+
+//kesetaraan
+let password = "ical2";
+if (password == "ical") {
+  console.log("Password anda benar");
+} else {
+  console.log("password anda salah");
+}
+//else if
+let nilai3 = 70;
+if (nilai3 > 90) {
+  console.log("Nilai anda bagus");
+} else if (nilai3 >= 80) {
+  console.log("Nilai anda cukup");
+} else {
+  console.log("nilai anda kurang");
+}
+let ayam2 = 32;
+if (ayam2 >= 10 && ayam2 < 100) {
+  console.log("Ayam lebih dari 10");
+}
+//switch case
+var color = "kuning";
+switch (color) {
+  case "merah":
+    console.log("Berhenti");
+    break;
+  case "kuning":
+    console.log("Hati hati");
+    break;
+  case "hijau":
+    console.log("Jalan");
+    break;
+  default:
+    console.log("Tunggu");
+}
