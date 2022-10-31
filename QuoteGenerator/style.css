@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+
+}
+body {
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+text-align: center;
+background: url(img/project-1.jpg) no-repeat center/ cover;
+}
+.container{
+    width: 500px;
+    height: 450px;
+}
+.header{
+    font-size: 1.2rem;
+    border:solid 2px #fff;
+    color: #fff;
+    background-color: #262626;
+    padding: 5px;
+    width: 80%;
+    margin: 2px auto;
+    border-radius: 7px;
+
+
+}
+.main-content{
+    width: 100%;
+    aspect-ratio: 100 / 29;
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 50px 40px;
+    box-shadow: 0 0 10px;
+
+}
+.main-content .text-area{
+    font-size: 1.5rem;
+    line-height: 1.5;
+}
+.main-content .person{
+    font-size: 1.6rem;
+    color: red;
+    text-decoration: uppercase;
+    margin-top: 20px;
+}
+
+.button-area button{
+    background-color: #26262626;
+    font-size: 1.3rem;
+    padding: 10px 15px;
+    margin-top: 20px;
+    border-radius: 5px;
+
+}
+
+.button-area button:active{
+    background-color: aqua;
+}
+.button-area button:hover{
+    
+    background-color: lightblue;
+}
