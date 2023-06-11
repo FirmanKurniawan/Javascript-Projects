@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Contoh Proyek JavaScript Sederhana</title>
+</head>
+<body>
+
+  <h1>Kalkulator Sederhana</h1>
+
+  <label for="angka1">Angka 1:</label>
+  <input type="text" id="angka1">
+
+  <label for="angka2">Angka 2:</label>
+  <input type="text" id="angka2">
+
+  <button onclick="hitung()">Hitung</button>
+
+  <p id="hasil"></p>
+
+  <script>
+    function hitung() {
+      var angka1 = parseInt(document.getElementById("angka1").value);
+      var angka2 = parseInt(document.getElementById("angka2").value);
+      var hasil = angka1 + angka2;
+      document.getElementById("hasil").innerHTML = "Hasil: " + hasil;
+    }
+  </script>
+
+</body>
+</html>
